@@ -9,9 +9,9 @@
     width: 100%;
     padding: 24px;
     background: rgb(0,150,136);
-    background: -moz-linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,212,1) 20%);
-    background: -webkit-linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,212,1) 20%);
-    background: linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,212,1) 20%);
+    background: -moz-linear-gradient(180deg, rgba(0,150,136,1) 12%, rgba(218,219,212,1) 12%);
+    background: -webkit-linear-gradient(180deg, rgba(0,150,136,1) 12%, rgba(218,219,212,1) 12%);
+    background: linear-gradient(180deg, rgba(0,150,136,1) 12%, rgba(218,219,212,1) 12%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#009688",endColorstr="#dadbd4",GradientType=1);
 }
 
@@ -33,18 +33,104 @@ aside{
 main{
     height: 100%;
     width: 70%;
-    background: crimson;
+    background-image: url(../img/mine.jpg);
 }
+
 
 .header{
     width: 100%;
     height: 70px;
-    background: gray;
+    padding: 12px;
+    background: #EAEAEA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .l{
     border-left: 1px solid #D6D6D6;
 }
 .r{
     border-right: 1px solid #D6D6D6;
-    
+}
+
+.marginRight8px{
+    margin-right: 8px;
+}
+
+.header i{
+    font-size: 22px;
+    margin: 8px;
+    color: #B1B1B1;
+}
+
+.dFlex{
+    display: flex;
+}
+.alignItemsCenter{
+    align-items: center;
+}
+.justifyContentCenter{
+    justify-content: center;
+}
+
+.flexColumn{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.header .flexColumn p {
+    color:#959C9B;
+}
+
+.circleIcon{
+    height: 54px;
+    width: 54px;
+    border-radius: 27px;
+    background-color: #F2FBFF;
+}
+
+.banner{
+    background-color: #8EDAFC ;
+    padding: 12px;
+}
+
+.banner i{
+    color: #8EDAFC;
+    font-size: 22px;
+}
+.banner a {
+    color: #537B8E;
+}
+.search{
+    height: 52px;
+    padding: 4px;
+    background-color: #FAFAFA;
+}
+.searchButton{
+    height: 100%;
+    width: 10%;
+    border: 1px solid #FEFEFE;
+    background-color: #FFFFFF;
+}
+.searchTextInput{
+    height: 100%;
+    width: 90%;
+    border: 1px solid #FEFEFE;
+    background-color: #FFFFFF;
+    padding: 4px;
+
+}
+
+.chats{
+    overflow-y: auto;
+    background-color: white;
+    height: calc(100vh - 248px);
+}
+
+.chat{
+    height: 80px ;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #F9F9F9;
 }

@@ -11,15 +11,61 @@
 </head>
 <body>
     <div class="backround">
-        <div class="mainBox">
+        <div id="app" class="mainBox">
 
             <aside>
-                <div class="header r"></div>
+                <div class="header r">
+                    <div class="dFlex">
+                        <img class="marginRight8px circleIcon" src="./img/avatar_io.jpg" alt="Io">
+                        <div class="flexColumn">
+                            <h3>Sofia</h3>
+                        </div>
+                    </div>
+                    <div class="dFlex">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="banner dFlex alignItemsCenter">
+                    <div class="circleIcon dFlex alignItemsCenter justifyContentCenter marginRight8px"><i class="fa-solid fa-bell-slash"></i></div>
+                    <div>
+                        <h3>Ricevi le notifiche di nuovi messaggi</h3>
+                        <a href="#">Attiva notifiche desktop</a>
+                    </div>
+                </div>
+
+                <form class="search">
+                    <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
+                    <input class="searchTextInput" type="text" placeholder="Cerca o inizia una nuova chat" name="search">
+                </form>
+                <div class="chats">
+                    <div  v-for="(chats, i) in chats">
+                        <div class="chat">
+                            <img class="circleIcon" :src="chats.img" alt="">
+                        </div>
+    
+                    </div>
+                </div>
+
                 
             </aside>
 
             <main>
-                <div class="header l"></div>
+                <div class="header l">
+                    <div class="dFlex">
+                        <img class="marginRight8px circleIcon" src="./img/avatar_1.jpg" alt="Michele">
+                        <div class="flexColumn">
+                            <h3>Michele</h3>
+                            <p>Ultiumo accesso alle ore x</p>
+                        </div>
+                    </div>
+                    <div class="dFlex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
 
 
             </main>
