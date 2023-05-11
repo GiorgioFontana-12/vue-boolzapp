@@ -42,7 +42,11 @@
                 <div class="chats">
                     <div  v-for="(chats, i) in chats">
                         <div class="chat">
-                            <img class="circleIcon" :src="chats.img" alt="">
+                            <img class="circleIcon marginRight8px" :src="chats.img" alt="">
+                            <div class=" flexColumn">
+                                <h3>{{ chats.name }}</h3>
+                                <p>Ultimo messaggio inviato</p>
+                            </div>
                         </div>
     
                     </div>
@@ -68,6 +72,11 @@
                 </div>
 
                 <div class="messages">
+                    <div class="messagesSent">Ciao come stai?</div>
+                    <div class="messagesRecived">Bene, grazie!</div>
+                    <div class="messagesRecived">Tu?</div>
+                    <div class="messagesSent">Esercitazione complicata, ma mi diverto.</div>
+
 
                 </div>
                 <div class="mesasgeInput">

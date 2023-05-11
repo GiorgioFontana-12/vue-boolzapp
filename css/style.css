@@ -135,6 +135,11 @@ main{
     padding: 12px;
     background-color: white;
     border: 1px solid #F9F9F9;
+    display: flex;
+}
+
+.chat p {
+    color: #BCB4BD;
 }
 
 .mesasgeInput{
@@ -161,4 +166,30 @@ main{
     border: none;
     border-radius: 5px;
     padding: 4px;
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px;
+    overflow-y: auto;
+    font-size: 18px;
+}
+
+.messagesRecived{
+    max-width: 350px;
+    background-color:#FFFFFF ;
+    border-radius: 10px;
+    padding: 12px;
+    margin: 8px;
+}
+
+.messagesSent{
+    max-width: 350px;
+    padding: 12px;
+    background-color: #D5F9BA;
+    align-self: flex-end;
+    border-radius: 10px;
+    margin: 8px;
 }
