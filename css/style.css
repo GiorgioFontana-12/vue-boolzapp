@@ -181,15 +181,26 @@ main{
     max-width: 350px;
     background-color:#FFFFFF ;
     border-radius: 10px;
-    padding: 12px;
+    padding: 18px;
     margin: 8px;
+    position: relative;
 }
 
 .messagesSent{
     max-width: 350px;
-    padding: 12px;
+    padding: 18px;
     background-color: #D5F9BA;
     align-self: flex-end;
     border-radius: 10px;
     margin: 8px;
+    position: relative;
+}
+
+.messagesSent small,
+.messagesRecived small{
+    font-size: 10px;
+    position: absolute;    
+    right: 8px;
+    bottom: 6px;
+    color: #7C8585;
 }
