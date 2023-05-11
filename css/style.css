@@ -3,3 +3,48 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.backround{
+    height: 100vh;
+    width: 100%;
+    padding: 24px;
+    background: rgb(0,150,136);
+    background: -moz-linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,212,1) 20%);
+    background: -webkit-linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,212,1) 20%);
+    background: linear-gradient(180deg, rgba(0,150,136,1) 20%, rgba(218,219,212,1) 20%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#009688",endColorstr="#dadbd4",GradientType=1);
+}
+
+
+.mainBox{
+    height: 100%;
+    width: 1600px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+    background: cadetblue;
+}
+
+main{
+    height: 100%;
+    width: 70%;
+    background: crimson;
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    background: gray;
+}
+.l{
+    border-left: 1px solid #D6D6D6;
+}
+.r{
+    border-right: 1px solid #D6D6D6;
+    
+}
