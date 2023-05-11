@@ -33,7 +33,9 @@ aside{
 main{
     height: 100%;
     width: 70%;
-    background-image: url(../img/mine.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 
@@ -133,4 +135,30 @@ main{
     padding: 12px;
     background-color: white;
     border: 1px solid #F9F9F9;
+}
+
+.mesasgeInput{
+    height: 76px;
+    width: 100%;
+    background-color:#F3EEEA ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.messages{
+    width: 100%;
+    height: calc(100vh - 195px);
+    background-image: url(../img/mine.jpg);
+}
+.mesasgeInput i{
+    font-size: 26px ;
+    color: #7C8585;
+}
+.mesasgeInput input{
+    width: 80%;
+    height: 52px;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
 }
