@@ -186,7 +186,7 @@ createApp({
 
     methods: {
         openChat(i){
-            currentChat = i
+            this.currentChat = i
         }
 
     },

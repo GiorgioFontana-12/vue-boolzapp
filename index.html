@@ -40,8 +40,8 @@
                     <input class="searchTextInput" type="text" placeholder="Cerca o inizia una nuova chat" name="search">
                 </form>
                 <div class="chats">
-                    <div  v-for="(chat, i) in chats">
-                        <div @click="openChat(i)" class="chat">
+                    <div  v-for="(chat, i) in chats" @click="openChat(i)">
+                        <div class="chat">
                             <img class="circleIcon marginRight8px" :src="chat.img" alt="">
                             <div class=" flexColumn">
                                 <h3>{{ chat.name }}</h3>
@@ -58,9 +58,9 @@
             <main>
                 <div class="header l">
                     <div class="dFlex">
-                        <img class="marginRight8px circleIcon" src="./img/avatar_1.jpg" alt="Michele">
+                        <img class="marginRight8px circleIcon" :src="chats[currentChat].img" alt="chats[currentChat].name">
                         <div class="flexColumn">
-                            <h3>Michele</h3>
+                            <h3>{{chats[currentChat].name }}</h3>
                             <p>Ultiumo accesso alle ore x</p>
                         </div>
                     </div>
