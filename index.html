@@ -40,11 +40,11 @@
                     <input class="searchTextInput" type="text" placeholder="Cerca o inizia una nuova chat" name="search">
                 </form>
                 <div class="chats">
-                    <div  v-for="(chats, i) in chats">
-                        <div class="chat">
-                            <img class="circleIcon marginRight8px" :src="chats.img" alt="">
+                    <div  v-for="(chat, i) in chats">
+                        <div @click="openChat(i)" class="chat">
+                            <img class="circleIcon marginRight8px" :src="chat.img" alt="">
                             <div class=" flexColumn">
-                                <h3>{{ chats.name }}</h3>
+                                <h3>{{ chat.name }}</h3>
                                 <p>Ultimo messaggio inviato</p>
                             </div>
                         </div>
@@ -72,10 +72,11 @@
                 </div>
 
                 <div class="messages">
-                    <div class="messagesSent"><p>Ciao come stai?</p> <small>12:13</small> </div>
+                    <div v-for="(message) in chats[currentChat].messages.message"  ></div>
+                    <!-- <div class="messagesSent"><p>Ciao come stai?</p> <small>12:13</small> </div>
                     <div class="messagesRecived"><p>Bene, grazie</p> <small>12:14</small> </div>
                     <div class="messagesRecived"><p>Tu?</p> <small>12:19</small> </div>
-                    <div class="messagesSent"><p>Esercitazione complicata, ma mi diverto.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p> <small>12:25</small> </div>
+                    <div class="messagesSent"><p>Esercitazione complicata, ma mi diverto.</p> <small>12:25</small> </div> -->
 
 
                 </div>

@@ -171,7 +171,6 @@ main{
 .messages{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 50px;
     overflow-y: auto;
     font-size: 18px;
