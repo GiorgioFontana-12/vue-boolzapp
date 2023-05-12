@@ -71,8 +71,8 @@
                     </div>
                 </div>
 
-                <div v-for="(message) in chats[currentChat].messages" class="messages">
-                    <div :class="( message.status = sent ) ? 'messagesSent' : 'messagesRecived' "><p>{{ message.message }}</p> <small>{{ message.date }}</small> </div>
+                <div  class="messages">
+                    <div v-for="(message) in chats[currentChat].messages" :class="( message.status == 'sent' ) ? 'messagesSent' : 'messagesRecived' "><p>{{ message.message }}</p> <small>{{ message.date }}</small> </div>
                     <!-- <div class="messagesRecived"><p>Bene, grazie</p> <small>12:14</small> </div>
                     <div class="messagesRecived"><p>Tu?</p> <small>12:19</small> </div>
                     <div class="messagesSent"><p>Esercitazione complicata, ma mi diverto.</p> <small>12:25</small> </div> -->
