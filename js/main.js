@@ -16,11 +16,7 @@ createApp({
             
             currentChat: 0,
             
-            newMessage:{
-                date: '11/01/2020 15:51:00',
-                message: '',
-                status: 'send'
-            },
+            newMessage: "",
             
             chats: [
                 {
@@ -194,8 +190,12 @@ createApp({
             this.currentChat = i
         },
         sendMessage(currentChat){
-            this.sendNewMessage = { ...newMessage }
-            this.chats[currentChat].messages.unshift(this.sendNewMessage);
+            sendNewMessage = {
+                date: '10/01/2020 15:51:00',
+                message: this.newMessage,
+                status: 'sent'
+            }
+            this.chats[this.currentChat].messages.push(sendNewMessage);
         }
         
 
