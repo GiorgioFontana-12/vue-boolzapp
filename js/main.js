@@ -17,7 +17,14 @@ createApp({
             currentChat: 0,
             
             newMessage: "",
-            
+
+            botMessage: {
+                date: '10/01/2020 15:51:00',
+                message: 'OK!!',
+                status: 'received'
+            },
+
+
             chats: [
                 {
                     name: 'Michele',
@@ -194,9 +201,15 @@ createApp({
                 date: '10/01/2020 15:51:00',
                 message: this.newMessage,
                 status: 'sent'
-            }
+            };
             this.chats[this.currentChat].messages.push(sendNewMessage);
-            
+            this.newMessage= '';
+            setTimeout(botMessage(){
+                this.chats[this.currentChat].messages.push(botMessage);
+                
+            }, 1000);
+
+
         }
         
 
