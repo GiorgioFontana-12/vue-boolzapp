@@ -204,11 +204,7 @@ createApp({
             };
             this.chats[this.currentChat].messages.push(sendNewMessage);
             this.newMessage= '';
-            setTimeout(botMessage(){
-                this.chats[this.currentChat].messages.push(botMessage);
-                
-            }, 1000);
-
+            setTimeout(function(){this.chats[this.currentChat].messages.push(botMessage)}, 1000);
 
         }
         
