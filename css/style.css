@@ -27,7 +27,6 @@
 aside{
     width: 30%;
     height: 100%;
-    background: cadetblue;
 }
 
 main{
@@ -126,14 +125,12 @@ main{
 
 .chats{
     overflow-y: auto;
-    background-color: white;
     height: calc(100vh - 248px);
 }
 
 .chat{
     height: 80px ;
     padding: 12px;
-    background-color: white;
     border: 1px solid #F9F9F9;
     display: flex;
 }
@@ -196,7 +193,10 @@ main{
     position: relative;
     word-wrap: break-word;
 }
-
+.chats .pointer:hover{
+    cursor: pointer;
+    background-color: #EEEEEE !important;
+}
 .messagesSent small,
 .messagesRecived small{
     font-size: 10px;

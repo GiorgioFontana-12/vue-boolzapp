@@ -40,7 +40,7 @@
                     <input class="searchTextInput" type="text" placeholder="Cerca o inizia una nuova chat" name="search">
                 </form>
                 <div class="chats">
-                    <div  v-for="(chat, i) in chats" @click="openChat(i)">
+                    <div class="pointer"  v-for="(chat, i) in chats" @click="openChat(i)">
                         <div class="chat">
                             <img class="circleIcon marginRight8px" :src="chat.img" alt="">
                             <div class=" flexColumn">
@@ -81,7 +81,7 @@
                 </div>
                 <div class="mesasgeInput">
                     <i class="fa-regular fa-face-smile"></i>
-                    <input type="text" placeholder="Scrivi un messaggio">
+                    <input @keyUp.enter="sendMessage" type="text" v-model="newMessage.message" placeholder="Scrivi un messaggio">
                     <i class="fa-solid fa-microphone"></i>
                 </div>
 
