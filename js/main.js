@@ -14,6 +14,8 @@ createApp({
             //     {name: "Davide", lastAccess: "x:x", img:"./img/avatar_8.jpg"},
             // ],
             
+            search: '',
+
             currentChat: 0,
             
             newMessage: "",
@@ -193,9 +195,11 @@ createApp({
     },
 
     methods: {
+        
         openChat(i){
             this.currentChat = i
         },
+
         sendMessage(currentChat){
             sendNewMessage = {
                 date: '10/01/2020 15:51:00',
@@ -205,11 +209,17 @@ createApp({
             this.chats[this.currentChat].messages.push(sendNewMessage);
             this.newMessage= '';
             setTimeout(() => {this.chats[this.currentChat].messages.push(this.botMessage)}, 1000);
+        },
 
+        searchChats(search){
+            if (!this.chats.name.includes(search)) {
+                this.chats.visible = false
+                
+            }
         }
-        
 
     },
+
 
     mounted() {
 

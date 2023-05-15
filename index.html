@@ -37,10 +37,10 @@
 
                 <form class="search">
                     <button class="searchButton" type="submit"><i class="fa fa-search"></i></button>
-                    <input class="searchTextInput" type="text" placeholder="Cerca o inizia una nuova chat" name="search">
+                    <input class="searchTextInput" type="text" placeholder="Cerca o inizia una nuova chat" v.model="search" @keyup="searchChats(search)" name="search">
                 </form>
                 <div class="chats">
-                    <div class="pointer"  v-for="(chat, i) in chats" @click="openChat(i)">
+                    <div class="pointer"  v-for="(chat, i) in chats" v-show="chat.visible == true" @click="openChat(i)">
                         <div class="chat">
                             <img class="circleIcon marginRight8px" :src="chat.img" alt="">
                             <div class=" flexColumn">
