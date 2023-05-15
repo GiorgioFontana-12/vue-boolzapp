@@ -196,6 +196,7 @@ createApp({
                 status: 'sent'
             }
             this.chats[this.currentChat].messages.push(sendNewMessage);
+            
         }
         
 
