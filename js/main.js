@@ -194,8 +194,8 @@ createApp({
             this.currentChat = i
         },
         sendMessage(currentChat){
-            sendNewMessage = { ...newMessage }
-            this.chats[currentChat].messages.unshift(newMessage);
+            this.sendNewMessage = { ...newMessage }
+            this.chats[currentChat].messages.unshift(this.sendNewMessage);
         }
         
 
